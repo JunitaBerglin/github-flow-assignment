@@ -1,14 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quiz/title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <h1>Welcome to our Music Quiz!</h1>
+
     <form>
-        
+      <label for="username">Enter your username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Eg. 'Loreen'"
+        required />
+
+      <fieldset>
+        <legend>Question 1: Which of following songs is a Beatles song?</legend>
+
+        <div>
+          <input type="radio" id="yellow" name="q1" value="yellow" checked />
+          <label for="yellow">Yellow Submarine</label>
+        </div>
+
+        <div>
+          <input type="radio" id="green" name="q1" value="green" />
+          <label for="green">Green Submarine</label>
+        </div>
+
+        <div>
+          <input type="radio" id="pink" name="q1" value="pink" />
+          <label for="pink">Pink Submarine</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Question 2: Who is Cher?</legend>
+
+        <div>
+          <input type="radio" id="artist" name="q2" value="artist" checked />
+          <label for="artist">An artist</label>
+        </div>
+
+        <div>
+          <input type="radio" id="dancer" name="q2" value="dancer" />
+          <label for="dancer">A backup dancer</label>
+        </div>
+
+        <div>
+          <input type="radio" id="dj" name="q2" value="dj" />
+          <label for="dj">A DJ</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          Question 3: Finish this lyric (song by ABBA): "You are the dancing
+          queen,"
+        </legend>
+
+        <div>
+          <input type="radio" id="neat" name="q3" value="neat" checked />
+          <label for="neat">"fun and neat"</label>
+        </div>
+
+        <div>
+          <input type="radio" id="sweet" name="q3" value="sweet" />
+          <label for="sweet">"young and sweet"</label>
+        </div>
+
+        <div>
+          <input type="radio" id="old" name="q3" value="old" />
+          <label for="old">"old but sweet"</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          Question 4: What type of music does Swedish House Maffia make?
+        </legend>
+
+        <div>
+          <input type="radio" id="house" name="q4" value="house" checked />
+          <label for="house">House</label>
+        </div>
+
+        <div>
+          <input type="radio" id="classical" name="q4" value="classical" />
+          <label for="classical">Classical</label>
+        </div>
+
+        <div>
+          <input type="radio" id="pop" name="q4" value="pop" />
+          <label for="pop">Pop</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          Question 5: Which lyric is correct in this song by Michael Jackson?
+        </legend>
+
+        <div>
+          <input type="radio" id="world" name="q5" value="world" checked />
+          <label for="world">We are the world</label>
+        </div>
+
+        <div>
+          <input type="radio" id="team" name="q5" value="team" />
+          <label for="team">We are the team</label>
+        </div>
+
+        <div>
+          <input type="radio" id="gang" name="q5" value="gang" />
+          <label for="gang">We are the gang</label>
+        </div>
+      </fieldset>
+      <div class="getResultsContainer">
+        <input type="submit" id="getResults" value="Get results!" />
+      </div>
     </form>
-</body>
+  </body>
 </html>
