@@ -1,21 +1,18 @@
 import { Player } from "./models/Player";
 
-//hämta totalSumma & namn
 export function showHighscore(username, sumPoints) {
-  //localstorage.getItem...
   let highScores = JSON.parse(localStorage.getItem("savedHighScore") || "[]");
-  //ta emot username & score
+
   let newPlayer: Player = new Player(username, sumPoints);
 
   highScores.push(newPlayer);
-  //localStorage.setItem
+
   localStorage.setItem("savedHighScore", JSON.stringify(highScores));
 
   let newHighscores = JSON.parse(
     localStorage.getItem("savedHighScore") || "[]"
   );
 
-  //ta ut usernamne o score i html
   //byt ut denna div mot div i html kod
   let divElement: HTMLDivElement = document.createElement("div");
 
